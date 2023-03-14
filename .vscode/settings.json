@@ -1,5 +1,0 @@
-{
-  "yaml.schemas": {
-    "https://json.schemastore.org/kustomization.json": "file:///Users/ngeorger/sredevops/personal-gitops-flux/bootstrap/flux-system/gotk-sync.yaml"
-  }
-}
