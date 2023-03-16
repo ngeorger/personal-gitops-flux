@@ -92,7 +92,7 @@ sealed-secret.crt
 **.key
 **/.DS_Store
 .vscode
-
+apps/base/ghost
 
 
 # GitHub actions binaries
