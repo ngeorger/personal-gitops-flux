@@ -5,7 +5,8 @@ metadata:
   name: cloudflare-api
 spec:
   acme:
-    server: https://acme-staging-v02.api.letsencrypt.org/directory
+    # The ACME server URL
+    server: https://acme-v02.api.letsencrypt.org/directory
     email: ngeorger@gmail.com
 
     # Name of a secret used to store the ACME account private key
