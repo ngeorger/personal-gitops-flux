@@ -92,4 +92,8 @@ sealed-secret.crt
 **.key
 **/.DS_Store
 .vscode
-version2
+
+
+
+# GitHub actions binaries
+bin/
