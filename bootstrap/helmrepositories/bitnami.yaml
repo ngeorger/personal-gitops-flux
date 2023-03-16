@@ -4,16 +4,26 @@ metadata:
   name: bitnami
   namespace: flux-system
 spec:
-  interval: 15m
+  interval: 24h
   url: https://charts.bitnami.com/bitnami
 
 ---
-
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
   name: sealed-secrets
   namespace: flux-system
 spec:
-  interval: 15m
+  interval: 24h
   url: https://bitnami-labs.github.io/sealed-secrets
+
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: bitnami
+  namespace: flux-system
+spec:
+  interval: 24h
+  url: https://charts.bitnami.com/bitnami
+

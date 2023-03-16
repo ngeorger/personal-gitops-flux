@@ -1,0 +1,15 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: cloudflare-api-token
+  namespace: external-dns
+spec:
+  encryptedData:
+    cloudflare_api_token: AQC/ftj1mhlOzQCSD4N0u7I7q2h0AMTWsCEbtWVoJ0MBJhMtOEPl2mPAcyXbWVPqcAN9a2peNLq7XboYxC131nSElkFsLYn71iKiWsO4FySbBszSclWB5fSpP84Fp5GIZrF7/V3r7frog+hO4ywAXe+TNk1P/hvFwxtUrgg35bXVtXT0I3IS3sf3/n09gyODU5mETQX34LUDkBLR3q5LGlsvX7mcXD1FrMxqkg+cIMF0B9TYHAadIv54+jAyR1wqDiR1CRNM8WxN0mbp52jEpiNtdzPNnXF+FAQuXZm4iswmwxtAk2+08uF0GPZqeYzrxMaZVzHzRNAdNKjVWggep/xCMtvTIQtck8CmLrSb/Yl3PMsyJPJmWrfyvQNOw3LPEdkOF/xvToIUAKGMZGa5Mt0d8JhKqdeq/xg=
+  template:
+    metadata:
+      creationTimestamp: null
+      name: cloudflare-api-token
+      namespace: external-dns
+

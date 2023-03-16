@@ -1,0 +1,15 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: cloudflare-email
+  namespace: external-dns
+spec:
+  encryptedData:
+    cloudflare_email: AQAsTjKkEa7aR5TdN/fNlXkLRDv7jUiI2Y+8Bnhgf3kVZEDYtx7thBEZ0iiTaQbECGVXWoGUKhRO5FnwGKtwoVbbNi8EMxaw0a14fCcb/aVsVxtYWtV4CIx+aAhbOBdpw1cMXMGrWCwxiQ4l3pbdUO414pzoBqKW2bQ3+26WOFKhfP+1PDRT9kBifMNP5dn6ZwwBJQ48fKSrK/gx8JJNMMHtydL6m2nEOPU5Kq1aJrYl6+26cCFH1/xLWhS9KLAIKYh40insd4GPXw+usJq32mChaU02Z7zAXVb9rhSQWbxcymYHJKcA517r6I2ttvbHR5cpJN4Ryaer+WI5yllSC4D1pX1hYm5EtXWWC/XVdzBbvVe1KJjBAdiT3xMAOIKnVcr9bQ==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: cloudflare-email
+      namespace: external-dns
+
