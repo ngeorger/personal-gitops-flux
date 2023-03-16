@@ -15,15 +15,6 @@ spec:
   interval: 24h
   url: https://charts.jetstack.io
 ---
-apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: HelmRepository
-metadata:
-  name: origin-ca-issuer
-  namespace: cert-manager
-spec:
-  interval: 24h
-  url: https://github.com/cloudflare/origin-ca-issuer/blob/trunk/deploy/charts/origin-ca-issuer
----
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
@@ -42,23 +33,4 @@ spec:
       interval: 12h
   values:
     installCRDs: true
----
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: HelmRelease
-metadata:
-  name: origin-ca-issuer
-  namespace: cert-manager
-spec:
-  interval: 24h
-  chart:
-    spec:
-      chart: origin-ca-issuer
-      version: "0.x"
-      sourceRef:
-        kind: HelmRepository
-        name: origin-ca-issuer
-        namespace: cert-manager
-      interval: 12h
-  # values:
-  #   installCRDs: true
 ---
