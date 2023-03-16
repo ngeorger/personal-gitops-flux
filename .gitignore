@@ -91,3 +91,5 @@ sealed-secret.crt
 **.pem
 **.key
 **/.DS_Store
+.vscode
+version2
