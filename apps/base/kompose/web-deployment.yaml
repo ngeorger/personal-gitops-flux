@@ -39,15 +39,14 @@ spec:
             requests:
               cpu: 100m
               memory: 128Mi
-              
+          # mount the configmap in a path     
           volumeMounts:
             - mountPath: /etc/nginx/nginx.conf
               name: nginx-conf
               readOnly: true
-      restartPolicy: Always
       volumes:
         - name: nginx-conf
-          persistentVolumeClaim:
-            claimName: nginx-conf
-            readOnly: true
+          configMap:
+            name: nginx-conf
+      restartPolicy: Always
 status: {}

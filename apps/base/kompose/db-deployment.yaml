@@ -38,7 +38,17 @@ spec:
             requests:
               cpu: 100m
               memory: 128Mi
-
+          env:
+            - name:  MYSQL_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-root-password
+                  key: mysql-root-password
+            - name: KNOWN_DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: known-db-password
+                  key: known-db-password
           volumeMounts:
             - mountPath: /var/lib/mysql
               name: mysql-runtime
