@@ -34,8 +34,8 @@ spec:
             - containerPort: 80
           resources:
             limits:
-              cpu: 100m
-              memory: 128Mi
+              cpu: 1000m
+              memory: 512Mi
             requests:
               cpu: 100m
               memory: 128Mi
@@ -48,5 +48,6 @@ spec:
         - name: nginx-conf
           configMap:
             name: nginx-conf
+            
       restartPolicy: Always
 status: {}
