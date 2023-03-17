@@ -38,13 +38,5 @@ spec:
             requests:
               cpu: 100m
               memory: 128Mi
-              
-          volumeMounts:
-            - mountPath: /var/www/html/Uploads
-              name: data
       restartPolicy: Always
-      volumes:
-        - name: data
-          persistentVolumeClaim:
-            claimName: data
 status: {}

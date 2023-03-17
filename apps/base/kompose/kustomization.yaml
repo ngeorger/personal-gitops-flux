@@ -3,13 +3,11 @@ kind: Kustomization
 resources:
 - app-deployment.yaml
 - app-service.yaml
-- data-persistentvolumeclaim.yaml
 - db-deployment.yaml
 - db-service.yaml
 - known-back-networkpolicy.yaml
 - lb-web-networkpolicy.yaml
 - mysql-runtime-persistentvolumeclaim.yaml
-- nginx-conf-persistentvolumeclaim.yaml
 - web-deployment.yaml
 - web-service.yaml
 - configmap.yaml
