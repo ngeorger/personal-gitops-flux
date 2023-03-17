@@ -12,3 +12,4 @@ resources:
 - nginx-conf-persistentvolumeclaim.yaml
 - web-deployment.yaml
 - web-service.yaml
+- configmap.yaml
