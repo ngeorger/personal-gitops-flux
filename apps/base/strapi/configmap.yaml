@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: strapi-config
+  namespace: strapi
+data:
+  databaseClient: postgres
+  databaseName: strapi-demo
+  databaseHost: <host>
+  databasePort: "5432" 
+  databaseUsername: <username>
+  databasePassword: <password>
